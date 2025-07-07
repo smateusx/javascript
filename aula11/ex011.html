@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu país de origem</title>
+</head>
+<body>
+    <h1>Sistema de Nacionalidade</h1>
+    Seu país de nascimento: <input type="text" name="txtpaís" id="txtpaís">
+    <input type="button" value="Selecionar" onclick="gerar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function gerar() {
+            var país = document.getElementById('txtpaís')
+            var res = document.getElementById('res')
+            var país = txtpaís.value
+            if (país == 'Brasil') {
+                res.innerHTML += `Você é brasileiro, pq nasceu no ${país}`
+            } else {
+                res.innerHTML += `Estrangeiro, você nasceu em ${país}`
+            }
+        }
+    </script>
+</body>
+</html>
