@@ -6,13 +6,14 @@ function contar() {
 
     if (inicio.value.length == 0 || fim.value.length == 0 || passo.value.length == 0) {
         alert('ERRO! Digite um número!')
+        res.innerHTML = ('Impossível contar!')
     } else {
         res.innerHTML = 'Contando:'
         let i = Number(inicio.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
-        if (f == 0 || p == 0) {
-            alert('ERRO! O campo não pode ser 0')
+        if (f <= 0 || p <= 0) {
+            alert('ERRO! O campo não pode ser 0 ou menor que 0')
         } else {
             if (i<f) { //contagem crescente
                 for (let c = i; c <= f; c += p) {
