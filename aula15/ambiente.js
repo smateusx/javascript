@@ -2,7 +2,7 @@ let num = [5, 8, 9, 3, 14]
 //num[5] = 95
 
 num.push(3) //colocar na última posição do vetor
-num.sort() //organizar o vetor
+num.sort() //colocar o vetor em ordem
 console.log(`nosso vetor é o ${num}`)
 console.log(`nosso vetor tem ${num.length} posições`)
 console.log(`o primeiro vetor é o ${num[0]}`)
